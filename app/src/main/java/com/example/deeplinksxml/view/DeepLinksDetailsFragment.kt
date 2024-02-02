@@ -29,7 +29,7 @@ class DeepLinksDetailsFragment : Fragment(R.layout.deep_links_details_screen) {
             val data = args.getString("imageId")
             if (data != null) {
 
-                urlSikici(data)?.let { fragmentBinding.deeplinksIV.loadImageUrl(it) }
+                converturl(data)?.let { fragmentBinding.deeplinksIV.loadImageUrl(it) }
                 updateImage(data)
             }
         }
