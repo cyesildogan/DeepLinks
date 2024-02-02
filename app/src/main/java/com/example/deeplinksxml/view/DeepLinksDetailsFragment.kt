@@ -52,7 +52,7 @@ class DeepLinksDetailsFragment : Fragment(R.layout.deep_links_details_screen) {
         }
     }
 
-    fun urlSikici(data : String): String?{
+    fun converturl(data : String): String?{
         val pattern = "id%3D([^&]+)".toRegex()
         val matchResult = pattern.find(data)
         return matchResult?.groupValues?.get(1)
